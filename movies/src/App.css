@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#7c9fca, #4a6fa3);
+}
+body .main {
+  background-color: #fafafc;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.search {
+  background: linear-gradient(0.25turn, #ff690f, #e9391a);
+  height: 110px;
+  position: relative;
+  width: 100%;
+}
+.search .input {
+  display: flex;
+  margin: auto;
+}
+.search .input .field {
+  display: flex;
+  background-color: rgba(250, 250, 252, 0.3);
+  border-radius: 2px;
+  border-style: none;
+  height: 55%;
+  width: 92%;
+  margin: 30px 0 0 35px;
+}
+.search .input .field img {
+  height: 35px;
+  width: 40px;
+  margin: auto 10px auto 15px;
+}
+.search .input .field input {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: rgba(250, 250, 252, 0);
+  border-style: none;
+  padding-left: 5px;
+  width: 100%;
+}
+.search .input .field input::placeholder {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  opacity: 1;
+}
+.search .input .field input:focus {
+  border-style: none;
+  color: black;
+  outline: none;
+  background-color: #fafafc;
+  font-weight: bold;
+  font-size: 17px;
+  position: absolute;
+  padding-left: 60px;
+  left: 100px;
+  top: 25px;
+  width: 91%;
+  height: 60%;
+}
+.search .input .field input:focus::placeholder {
+  opacity: 0;
+}
+.search .input .searchButton {
+  display: flex;
+  border-radius: 2px;
+  align-items: center;
+  background-color: #fafafc;
+  height: 55%;
+  width: 60px;
+  margin: 30px 35px 0px 5px;
+}
+.search .input .searchButton button {
+  background-color: transparent;
+  border-style: none;
+  width: 100%;
+}
+.search .input .searchButton button:focus {
+  outline: none;
+}
+.search .input .searchButton img {
+  height: 35px;
+  width: 40px;
+  margin: auto;
+}
+
+.dropDownContainer {
+  background-color: #fafafc;
+  border: 1px grey solid;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  position: absolute;
+  top: 90px;
+  left: 98px;
+  height: 500px;
+  width: 91.2%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  padding: 20px 20px 10px 60px;
+}
+.options span {
+  font-size: 17px;
+  font-weight: bold;
+  color: #6e6d6d;
+}
+
+/*# sourceMappingURL=App.css.map */

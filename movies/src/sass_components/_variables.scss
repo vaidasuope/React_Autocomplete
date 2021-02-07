@@ -1,0 +1,10 @@
+$white-colour: #fafafc;
+$align-flex: flex;
+$none-value: none;
+$font-bold: bold;
+$font-size: 17px;
+
+@mixin photoSize {
+  height: 35px;
+  width: 40px;
+}
