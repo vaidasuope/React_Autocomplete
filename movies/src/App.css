@@ -35,7 +35,7 @@ body .main {
   width: 92%;
   margin: 30px 0 0 35px;
 }
-.search .input .field img {
+.search .input .field .firstPhoto {
   height: 35px;
   width: 40px;
   margin: auto 10px auto 15px;
@@ -56,6 +56,12 @@ body .main {
   opacity: 1;
 }
 .search .input .field input:focus {
+  background-image: url("img/movie1.svg");
+  background-size: 30px 35px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+  padding-left: 60px;
+  padding-bottom: 10px;
   border-style: none;
   color: black;
   outline: none;
@@ -63,11 +69,18 @@ body .main {
   font-weight: bold;
   font-size: 17px;
   position: absolute;
-  padding-left: 60px;
   left: 100px;
   top: 25px;
   width: 91%;
   height: 60%;
+}
+.search .input .field label {
+  color: #999696;
+  left: 160px;
+  top: 65px;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
 }
 .search .input .field input:focus::placeholder {
   opacity: 0;
@@ -110,7 +123,7 @@ body .main {
   display: flex;
   flex-direction: column;
   height: 60px;
-  padding: 20px 20px 10px 60px;
+  padding: 20px 20px 10px 65px;
 }
 .options span {
   font-size: 17px;

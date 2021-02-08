@@ -32,7 +32,7 @@ body {
       width: 92%;
       margin: 30px 0 0 35px;
 
-      img {
+      .firstPhoto {
         @include photoSize;
         margin: auto 10px auto 15px;
       }
@@ -55,6 +55,12 @@ body {
       }
 
       input:focus {
+        background-image: url("img/movie1.svg");
+        background-size: 30px 35px;
+        background-repeat: no-repeat;
+        background-position: 15px;
+        padding-left: 60px;
+        padding-bottom: 10px;
         border-style: $none-value;
         color: black;
         outline: $none-value;
@@ -62,12 +68,21 @@ body {
         font-weight: $font-bold;
         font-size: $font-size;
         position: absolute;
-        padding-left: 60px;
         left: 100px;
         top: 25px;
         width: 91%;
         height: 60%;
       }
+
+      label {
+        color: #999696;
+        left: 160px;
+        top: 65px;
+        font-size: 12px;
+        font-weight: $font-bold;
+        position: absolute;
+      }
+
 
       input:focus::placeholder {
         opacity: 0;
@@ -115,10 +130,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 60px;
-  padding: 20px 20px 10px 60px;
+  padding: 20px 20px 10px 65px;
   span {
     font-size: $font-size;
     font-weight: $font-bold;
     color: #6e6d6d;
   }
 }
+

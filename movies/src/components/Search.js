@@ -6,6 +6,7 @@ function Search() {
 
     const [search, setSearch] = useState("");
     const [options, setOptions] = useState([]);
+    const [chosen, setChosen] = useState("");
     options.length = 8;
 
     const [display, setDisplay] = useState(false);
@@ -71,17 +72,29 @@ function Search() {
         setDisplay(false);
     }
 
+    function onSubmit (e,i) {
+        e.preventDefault();
+        setSearch("");
+        console.log("submit")
+        console.log(search)
+    }
+
+
+
+
     return (
         <div className="search">
-            <form className="input">
+            <form onSubmit={onSubmit} className="input">
                 <div ref={dropDownRef} className="field">
-                    <img src={movie} alt="Movie"/>
+                    <img className="firstPhoto" src={movie} alt="Movie"/>
                     <input
                         id="searchInput"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         onClick={() => setDisplay(!display)}
                         placeholder="Enter movie name"/>
+                    {display && (<label>Enter a movie name</label>)}
+
                     {display && (
                         <div className="dropDownContainer">
                             {options.map((item, index) => {
