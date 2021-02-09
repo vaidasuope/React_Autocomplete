@@ -95,7 +95,7 @@ function Search() {
                         placeholder="Enter movie name"/>
                     {display && (<label>Enter a movie name</label>)}
 
-                    {display && (
+                    {(display && search.length>=3) && (
                         <div className="dropDownContainer">
                             {options.map((item, index) => {
                                 return (
